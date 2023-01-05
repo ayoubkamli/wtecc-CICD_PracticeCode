@@ -1,0 +1,17 @@
+name: CI corkflow
+
+on:
+  push:
+    branches:
+      - "main"
+    
+    pull_request:
+      - "main"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container: python:3.9-slim
+
+
+
